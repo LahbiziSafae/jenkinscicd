@@ -69,7 +69,7 @@ node {
       stage("Docker build") {
         sh "cp -r  ~/certs ."
         //  TODO: replace the ecr (repo) with the right repo name.
-        sh "docker build --no-cache -t repo:${remoteImageTag} \
+        sh "docker build --no-cache -t 110609031244.dkr.ecr.eu-west-3.amazonaws.com/workorder:${remoteImageTag} \
                                     -f ${dockerFilePrefix}.Dockerfile ."
       }
 
