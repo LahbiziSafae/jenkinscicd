@@ -39,7 +39,7 @@ node {
       def remoteImageTag  = "${imageTag}-${BUILD_NUMBER}"
 
       def taskDefile      = "file://aws/task-definition-${remoteImageTag}.json"
-      def ecRegistry      = "https://%ACCOUNT%.dkr.ecr.eu-central-1.amazonaws.com"
+      def ecRegistry      = "https://110609031244.dkr.ecr.eu-west-3.amazonaws.com/workorder"
 
       /*
       / node-7.0.0 is a tag name for nodejd tool installation in Jenkins server,
@@ -79,7 +79,7 @@ node {
         //  eu-central-1: is the region where the Registery located
         //  aws-ecr: is the credentials ID located in the jenkins credentials
         //
-        docker.withR      (ecRegistry, "ecr:eu-central-1:aws-ecr") {
+        docker.withR      (ecRegistry, "ecr:eu-west-3:aws-ecr") {
           docker.image("repo:${remoteImageTag}").push(remoteImageTag)
         }
       }
