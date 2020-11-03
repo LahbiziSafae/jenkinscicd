@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "image": "110609031244.dkr.ecr.eu-west-3.amazonaws.com/workorder",
-            "name": "frontend",
+            "name": "sample-app",
             "essential": true,
             "cpu": 100,
             "memoryReservation": 300,
