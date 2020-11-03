@@ -2,7 +2,7 @@
     "family": "frontend",
     "containerDefinitions": [
         {
-            "image": "110609031244.dkr.ecr.eu-west-3.amazonaws.com/workorder:latest",
+            "image": "110609031244.dkr.ecr.eu-west-3.amazonaws.com/workorder",
             "name": "frontend",
             "essential": true,
             "cpu": 100,
