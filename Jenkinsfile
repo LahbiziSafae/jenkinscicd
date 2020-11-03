@@ -1,4 +1,4 @@
-node () {
+node {
   ws("workspace/${env.JOB_NAME}/${env.BRANCH_NAME}") {
     try {
       // Notify slack, new build started!
