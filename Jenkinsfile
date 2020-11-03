@@ -29,11 +29,11 @@ node {
         clusterName       = ""
       } else if  (env.BRANCH_NAME == "master") {
         wepackCfg         = ""
-        imageTag          = ""
-        serviceName       = ""
-        taskFamily        = ""
+        imageTag          = "latest"
+        serviceName       = "sample-app-service"
+        taskFamily        = "first-run-task-definition:7"
         dockerFilePrefix  = PRODUCTION
-        clusterName       = ""
+        clusterName       = "frontend"
       }
 
       def remoteImageTag  = "${imageTag}-${BUILD_NUMBER}"
