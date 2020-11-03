@@ -1,5 +1,5 @@
 {
-    "family": "frontend",
+    "family": "first-run-task-definition",
     "containerDefinitions": [
         {
             "image": "110609031244.dkr.ecr.eu-west-3.amazonaws.com/workorder",
